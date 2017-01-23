@@ -97,6 +97,11 @@ de:
         description: Beschreibung
         display_on: Angezeigter Wert
         type: Anbieter
+      spree/price:
+        country: Land
+        currency: Währung
+        amount: Betrag
+        is_default: aktuell gewählt
       spree/product:
         available_on: Erhältlich ab
         cost_currency: Kostenwährung
@@ -108,24 +113,29 @@ de:
         on_hand: verfügbar
         shipping_category: Versandkategorie
         tax_category: Steuerkategorie
-        depth: Tiefe
-        height: Höhe
+        depth: Tiefe (cm)
+        height: Höhe (cm)
         meta_description: Meta-Beschreibung
         meta_keywords: Meta-Schlagwörter
         meta_title: Meta-Titel
-        price: Verkaufspreis (netto)
+        price: Verkaufspreis (brutto)
         promotionable: Bewerbbar
         slug: Permalink
-        weight: Gewicht
-        width: Breite
+        weight: Gewicht (Gramm)
+        width: Breite (cm)
       spree/promotion:
-        advertise: Bewerben
-        code: Code
+        advertise: Werbeaktion
+        apply_automatically: automatisch berücksichtigen
+        base_code: Gutscheinnummer Gerüst
+        code: Gutschein-Nr.
         description: Beschreibung
-        event_name: Event Name
+        event_name: Aktionsname
         expires_at: Läuft aus am
         name: Name
-        path: Pfad
+        number_of_codes: Anzahl Gutscheinnummern
+        path: Teilbereich
+        per_code_usage_limit: Bestelllimit pro Gutschein
+        promotion_uses: Werbeaktion verwendet
         starts_at: Beginnt am
         usage_limit: Begrenztes Kontingent
       spree/promotion_category:
@@ -135,9 +145,14 @@ de:
         presentation: Angezeigter Wert
       spree/prototype:
         name: Name
+      spree/reimbursement_type:
+        store_credit: Gutschrift      
       spree/return_authorization:
-        amount: Anzahl
-        pre_tax_total: Vorsteuer Gesamtsumme
+        amount: Betrag
+        created_at: erstellt am
+        number: Nummer
+        pre_tax_total: Summe vor Steuer
+        state: Status
       spree/role:
         name: Name
       spree/shipment:
@@ -192,6 +207,7 @@ de:
         depth: Tiefe
         height: Höhe
         price: Preis
+        rebuild_vat_prices: MwSt. neu berechenen
         sku: Artikelnummer
         weight: Gewicht
         width: Breite
@@ -251,12 +267,19 @@ de:
       spree/return_item:
         acceptance_status: Akzeptanzstatus
         acceptance_status_errors: Akzeptanzfehler
+        amount: Betrag vor MwSt.
         charged: Berechnet
         exchange_variant: Tauschen mit
         inventory_unit_state: Status
         override_reimbursement_type_id: Vergütungstyp überschreiben
         preferred_reimbursement_type_id: Bevorzugter Vergütungstyp
         reception_status: Empfangsstatus
+          given_to_customer: dem Kunden ausgehändigt
+          lost_in_transit: beim Transport verloren
+          received: empfangen
+          shipped_wrong_item: falsche Lieferung
+          short_shipped: erst ausgeliefert
+          in_transit: in Zustellung
         return_reason: Grund
         total: Gesamt
       spree/return_reason:
@@ -305,6 +328,8 @@ de:
       spree/stock_transfer:
         created_at: Erstellt am
         description: Beschreibung
+        destination_location_id: Ziellager
+        source_location_id: Ausgangslager
         tracking_number: Tracking Nummer
       spree/tracker:
         analytics_id: Analytics ID
@@ -534,6 +559,8 @@ de:
     user_sessions:
       signed_in: Erfolgreich angemeldet.
       signed_out: Erfolgreich abgemeldet.
+      spree_user:
+        already_signed_out: Bereits abgemeldet
   errors:
     messages:
       already_confirmed: wurde bereits bestätigt
@@ -580,6 +607,7 @@ de:
     activate: Aktivieren
     active: Aktiv
     add: Hinzufügen
+    added: hinzugefügt
     add_action_of_type: Aktion hinzufügen
     add_country: Land hinzufügen
     add_coupon_code: Gutscheincode hinzufügen
@@ -593,8 +621,10 @@ de:
     add_state: Bundesland hinzufügen
     add_stock: Lager hinzufügen
     add_stock_management: Lagerverwaltung hinzufügen
+    add_taxon: Klassifizierung hinzufügen
     add_to_cart: In den Warenkorb
     add_variant: Variante hinzufügen
+    add_variant_properties: Varianten Eigenschaft hinzufügen
     additional_item: Kosten für weiteren Artikel
     address: Adresse
     address1: Adresse
@@ -606,6 +636,10 @@ de:
       tax_rates:
         excluding_tax: "%{name}%{amount}"
         including_tax: "%{name}%{amount} (Im Preis enthalten)"
+        vat: '%{name} (im Preis enthalten)'
+        vat_with_rate: '%{name} %{amount} (im Preis enthalten)'
+        vat_refund: 'Refund: %{name} (im Preis enthalten)'
+        vat_refund_with_rate: 'Rückerstattung: %{name} %{amount} (im Preis enthalten)'
     adjustment_successfully_closed: Anpassung wurde erfolgreich geschlossen!
     adjustment_successfully_opened: Anpassung wurde erfolgreich geöffnet!
     adjustment_total: Anpassungen Gesamt
@@ -621,8 +655,20 @@ de:
           cancel: stornieren
           resend: Neu senden
           resume: wiederaufnehmen
+      prices:
+        any_country: alle anderen Länder
+        edit:
+          edit_price: Preis bearbeiten
+        index:
+          amount_greater_than: Betrag größer als
+          amount_less_than: Betrag kleiner als
+          new_price: Neuer Preis
+        new:
+          new_price: Neuer Preis
       tab:
+        areas: Gebiete
         configuration: Konfiguration
+        display_order: Anzeige-Reihenfolge
         option_types: Optionen
         orders: Bestellungen
         overview: Übersicht
@@ -632,15 +678,19 @@ de:
         properties: Eigenschaften
         prototypes: Prototypen
         reports: Berichte
+        taxes: Steuersätze
         taxonomies: Klassifikationen
         taxons: Klassifikation
         users: Benutzer
         checkout: Zur Kasse
         general: Allgemein
         payments: Zahlungen
+        rma: Reklamationen
         settings: Einstellungen
         shipping: Lieferung
         stock: Lager
+        stock_items: Lagerhaltung
+        stock_transfers: Lagerbewegungen
       user:
         account: Konto
         addresses: Adressen
@@ -653,6 +703,12 @@ de:
         order_num: Bestellnummer
         orders: Bestellungen
         user_information: Benutzerinformationen
+        store_credit: Gutschriften
+      variants:
+        edit:
+          edit_variant: Variante bearbeiten
+        form:
+          pricing_hint: Es werden die Produktdetail Werte verwendet und können diese hier modifiziert werden
     administration: Verwaltung
     advertise: Bewerben
     agree_to_privacy_policy: Datenschutzerklärung akzeptieren
@@ -660,6 +716,8 @@ de:
     all: Alles
     all_adjustments_closed: Alle Anpassung wurden erfolgreich geschlossen!
     all_adjustments_opened: Alle Anpassung wurden erfolgreich geöffnet!
+    all_adjustments_finalized: Alle Anpassung gesperrt!
+    all_adjustments_unfinalized: Alle Anpassung entsperrt!
     all_departments: Alle Bereiche
     all_items_have_been_returned: Alles zurückgegeben
     allow_ssl_in_development_and_test: Erlaube SSL im Vorproduktions- und Testmodus
@@ -703,18 +761,23 @@ de:
     avs_response: Ergebnis der Adressprüfung
     back: Zurück
     back_end: Backend
+    back_to_customer_return: Zurück zur Kundenrücksendung
+    back_to_customer_return_list: Zurück zu Kundenrücksendungen
+    back_to_images_list: Zurück zur Bilderverwaltung
     back_to_payment: Zurück zur Zahlung
     back_to_resource_list: Zurück zur Bestellliste
     back_to_rma_reason_list: Zurück zur Rücksendeliste
     back_to_stock_locations_list: Zurück zur Lagerstandort Liste
     back_to_stock_movements_list: Zurück zur Bestandsführung Liste
     back_to_store: Zurück zum Shop
+    back_to_taxonomies_list: Zurück zur Klassifizierung
     back_to_users_list: Zurück zur Benutzerliste
     backorder: Nachlieferung
     backorderable: Nachbestellbar
-    backorderable_default: Nachbestellbar (standard)
+    backorderable_default: Nachbestellbar (Standard)
+    backorderable_header: Nachbestellbar
     backordered: Nachbestellt
-    backorders_allowed: Nachbestellt (standard)
+    backorders_allowed: Nachbestellt (Standard)
     balance_due: Soll
     base_amount: Grundwert
     base_percent: Grundwert (prozentual)
@@ -728,6 +791,7 @@ de:
     cancel: abbrechen
     canceled_at: Abgebrochen am
     canceler: Abgebrochen von
+    cancellation: Abbruch
     cannot_create_customer_returns: Kann Rücksendung nicht durchführen.
     cannot_create_payment_without_payment_methods: Sie können keine Zahlung für eine Bestellung anlegen, ohne vorher eine Zahlungsmethode definiert zu haben.
     cannot_create_returns: Sie können diese Bestellung nicht zurückgeben, da sie noch nicht versendet wurde.
