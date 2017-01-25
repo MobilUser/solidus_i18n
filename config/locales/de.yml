@@ -273,7 +273,7 @@ de:
         inventory_unit_state: Status
         override_reimbursement_type_id: Vergütungstyp überschreiben
         preferred_reimbursement_type_id: Bevorzugter Vergütungstyp
-        reception_status: Empfangsstatus
+        reception_status:
           given_to_customer: dem Kunden ausgehändigt
           lost_in_transit: beim Transport verloren
           received: empfangen
