@@ -821,6 +821,7 @@ de:
     clear_cache_ok: Zwischenspeicher erfolgreich geleert
     clear_cache_warning: Fehler beim Leeren vom Zwischenspeicher
     click_and_drag_on_the_products_to_sort_them: Produkte können durch Klicken und Ziehen sortiert werden
+    client_sdk_enabled: Client SDK aktiviert
     clone: Klonen
     close: Schließen
     close_all_adjustments: Alle Anpassungen schließen
@@ -845,10 +846,11 @@ de:
     country_based: Länder basiert
     country_name: Name
     country_names:
-      CA: Kanada
-      FRA: Frankreich
-      ITA: Italien
-      US: Amerika
+      AT: Österreich
+      CH: Schweiz
+      DE: Deutschland
+      FR: Frankreich
+      IT: Italien
     coupon: Gutschein
     coupon_code: Gutschein-Code
     coupon_code_already_applied: Der Gutschein-Code wurde bereits bei dieser Bestellung eingelöst
@@ -864,6 +866,8 @@ de:
     create_new_order: Neuer Bestellung
     create_reimbursement: Vergütung beantragen
     created_at: Erstellt am
+    created_by: Erzeugt durch
+    create_one: Eintrag erzeugen
     credit: Guthaben
     credit_allowed: Kredit erlaubt
     credit_card: Kreditkarte
@@ -880,6 +884,7 @@ de:
     customer: Kunde
     customer_details: Kundendetails
     customer_details_updated: Die Kundendaten wurden aktualisiert.
+    customer_invoice: Rechnung
     customer_return: Rücksendung
     customer_returns: Rücksendungen
     customer_search: Kunden Suche
@@ -900,7 +905,7 @@ de:
     date_picker:
       date_picker:
         first_day: Erster Tag
-        js_format: Js Format
+        js_format: Format
       first_day: 0
       format: "%d.%m.%Y"
       js_format: dd.mm.yy
@@ -926,10 +931,13 @@ de:
     display: Angezeigter Wert
     display_currency: Währung anzeigen
     doesnt_track_inventory: Bestandsverfolgung ist deaktiviert
+    download_promotion_code_list: Liste der Gutscheinnummern laden
     edit: Bearbeiten
     edit_reimbursement: Erstattung bearbeiten
     editing_resource: Eintrag bearbeiten
     editing_rma_reason: Rückgabebewilligungsgrund bearbeiten
+    editing_reimbursement: Rückvergütung bearbeiten
+    editing_shipping_category: Versandkategorie bearbeiten
     editing_user: Benutzer bearbeiten
     eligibility_errors:
       messages:
@@ -993,6 +1001,7 @@ de:
     filter_results: Ergebnisse filtern
     finalize: abschließen
     finalized: abgeschlossen
+    finalize_all_adjustments: Anpassungen sperren
     find_a_taxon: Klassifizierung suchen
     first_item: Kosten für das erste Produkt
     first_name: Vorname
@@ -1015,12 +1024,21 @@ de:
     guest_user_account: Ohne Registrierung bestellen
     has_no_shipped_units: hat keine gelieferten Einheiten
     height: Höhe
+    helpers:
+      products:
+        price_diff_add_html: "(+ %{amount_html})"
+        price_diff_subtract_html: "(- %{amount_html})"
+    hidden: verborgen
     hide_cents: Centbeträge ausblenden
+    hints:
+      spree/price:
+        country: "Welchem Land ist dieser Preis zugeordnet.<br/>Standard: jedes Land"    
     home: Home
     i18n:
       available_locales: Verfügbare Locales
       fields: Felder
       language: Sprache
+      locales_displayed_on_frontend_select_box: Auswahl der Sprachen auf der Shopseite
       localization_settings: Lokalisierungseinstellungen
       only_complete: Nur Vollständig
       only_incomplete: Nur Unvollständig
@@ -1060,6 +1078,16 @@ de:
     inventory_adjustment: Lager-Anpassung
     inventory_error_flash_for_insufficient_quantity: Ein Artikel aus Ihrem Warenkorb ist nicht mehr verfügbar.
     inventory_state: Lagerstatus
+    inventory_states:
+      backordered: nachbestellt
+      canceled: storniert
+      on_hand: lagernd
+      returned: retoure
+      shipped: versendet
+    invoice_font_face: Schriftart der Rechnungen
+    invoice_logo_scale: Größe des Shop Logos in %
+    invoices_settings: Rechnungseinstellungen
+    invoice_print: Rechnung drucken
     is_not_available_to_shipment_address: ist nicht erhältlich für Lieferadresse
     iso_name: Iso-Name
     item: Artikel
@@ -1076,6 +1104,7 @@ de:
     items_reimbursed: Vergütete Artikel
     items_to_be_reimbursed: Zu vergütende Artikel
     jirafe: Jirafe
+    label_print: Versandlabel drucken
     landing_page_rule:
       must_have_visited_path: Muss benutzen Pfad haben
       path: Pfad
@@ -1105,6 +1134,7 @@ de:
     make_refund: Gutschrift erstellen
     make_sure_the_above_reimbursement_amount_is_correct: Stellen Sie sicher, dass die obrige Summe der Vergütung korrekt ist!
     manage_promotion_categories: Werbungskategorien editieren.
+    manage_stock: Warenbestand
     manage_variants: Varianten editieren
     manual_intervention_required: Manuelles eingreifen erforderlich
     master_price: Verkaufspreis (netto)
@@ -1114,6 +1144,7 @@ de:
     max_items: Maximale Einheiten
     member_since: Mitglied seit
     memo: Notiz
+    merchant_id: Händler ID
     meta_description: Meta-Beschreibung
     meta_keywords: Meta-Schlagwörter
     meta_title: Meta-Titel
@@ -1131,6 +1162,7 @@ de:
     name_or_sku: Name oder Artikelnummer
     new: Neu
     new_adjustment: Neue Anpassung
+    new_adjustment_reason: Neuen Anpassungsgrund hinzufügen
     new_country: Neues Land
     new_customer: Neuer Kunde
     new_customer_return: Neue Kundenrücksendung
@@ -1166,18 +1198,22 @@ de:
     new_variant: Neue Variante
     new_zone: Neues Gebiet
     next: weiter
+    next_invoice_number: Nächste Rechnungsnr.
     no_actions_added: Keine Aktionen hinzugefügt
     no_available_date_set: Verfügbarkeitsdatum nicht vorhanden
+    no_images_found: Keine Bilder zu diesem Produkt vorhanden
     no_payment_found: Keine Zahlung gefunden
     no_pending_payments: Keine ausstehenden Zahlungen
     no_products_found: Keine Produkte gefunden
-    no_resource_found: Keine Einträge gefunden
+    no_resource: kein Eintrag
+    no_resource_found: Kein Eintrag gefunden
     no_results: Keine Ergebnisse
     no_returns_found: Keine Erstattung gefunden
     no_rules_added: Keine Regeln verfügbar
     no_shipping_method_selected: Keine Lieferungsart gewählt
     no_state_changes: Keine Statusänderung
     no_tracking_present: Keine Informationen zur Sendungsverfolgung angegeben.
+    no_variants_found_try_again: keine Produktvarianten gefunden, bitte erneut versuchen
     none: kein
     none_selected: nicht gewählt
     normal_amount: Normale Anzahl
@@ -1195,6 +1231,7 @@ de:
       variant_not_deleted: Variante konnte nicht gelöscht werden
     num_orders: Anzahl Bestellungen
     number: Nummer
+    number_of_codes: ! '%{count} Gutscheine'
     on_hand: Auf Lager
     open: Öffnen
     open_all_adjustments: Alle Anpassungen öffnen
@@ -1219,9 +1256,7 @@ de:
     order_line_items: Bestellposten
     order_mailer:
       cancel_email:
-        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde,
-
-'
+        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde, '
         instructions: Ihre Bestellung wurde storniert. Bitte bewahren Sie diese Stornierung für Ihre Unterlagen auf.
         order_summary_canceled: Bestellzusammenfassung [STORNO]
         subject: Bestellung storniert
@@ -1236,9 +1271,10 @@ de:
         thanks: Vielen Dank für Ihre Bestellung.
         total: Gesamtsumme
       inventory_cancellation:
-        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde,
-
-'
+        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde, '
+        instructions: einige oder alle Positionen Ihrer Bestellung wurden storniert. Bitte nehmen Sie diese Storno-Informationen zu ihren Unterlagen.
+        order_summary_canceled: Stornierte Positionen
+        subject: Stornierung der Bestellung        
     order_not_found: Wir konnten Ihre Bestellung nicht finden. Bitte versuchen Sie es später noch einmal.
     order_number: Bestellnummer %{number}
     order_processed_successfully: Ihre Bestellung wurde erfolgreich bearbeitet
@@ -1264,6 +1300,8 @@ de:
     out_of_stock: Ausverkauft
     overview: Überblick
     package_from: Paket von
+    packaging_slip: Lieferschein
+    packaging_slip_print: Lieferschein drucken
     pagination:
       next_page: Seite vor »
       previous_page: "« Seite zurück"
@@ -1311,13 +1349,14 @@ de:
     pre_tax_amount: Vorsteuer Zwischensumme
     pre_tax_refund_amount: Vorsteuer Gutschrift
     pre_tax_total: Vorsteuer Gesamtsumme
-    preferred_reimbursement_type: Bevorzugter Vergütungstyp
+    preferred_reimbursement_type: Bevorzugte Gutschriftenart
     presentation: Angezeigter Wert
     previous: zurück
     previous_state_missing: kein vorheriger Status
     price: Preis
     price_range: Preisbereich
     price_sack: Preis füllen
+    private_key: privater Schlüssel
     process: Abschicken
     product: Produkt
     product_details: Produkt-Details
@@ -1395,12 +1434,14 @@ de:
     prototypes: Prototypen
     provider: Anbieter
     provider_settings_warning: Nach einer Änderung des Anbietertyps muss erst gespeichert werden.
+    public_key: öffentlicher Schlüssel
     qty: Anzahl
     quantity: Anzahl
     quantity_returned: Zurückgegebene Menge
     quantity_shipped: Gelieferte Menge
     quick_search: Schnellsuche
     rate: Rate
+    ready_to_ship: fertig für den Versand
     reason: Grund
     receive: erhalten
     receive_stock: Empfangslager
@@ -1477,10 +1518,11 @@ de:
     sales_total: Gesamtumsatz
     sales_total_description: Gesamtsumme aller Bestellungen
     sales_totals: Gesamtumsätze
+    select_a_reason: Grund auswählen
     save_and_continue: Speichern und fortsetzen
     save_my_address: Adresse speichern
-    say_no: false
-    say_yes: true
+    say_no: Nein
+    say_yes: Ja
     scope: Bereich
     search: Suchen
     search_results: Suchergebnisse für '%{keywords}'
@@ -1494,12 +1536,15 @@ de:
     select_stock: Lager wählen
     selected_quantity_not_available: ausgewählte %{item} ist nicht verfügbar.
     send_copy_of_all_mails_to: Schicke eine Kopie aller E-Mails an
+    send_mailer: E-Mail senden
     send_mails_as: Schicke E-Mail als
     server: Server
     server_error: Der Server hat einen Fehler gemeldet
     settings: Einstellungen
     ship: verschicken
     ship_address: Lieferadresse
+    shipment_date: Versanddatum
+    shipment_number: Sendungsnummer
     ship_total: Versand gesamt
     shipment: Sendung
     shipment_adjustments: Sendung anpassen
@@ -1513,6 +1558,7 @@ de:
         thanks: Vielen Dank für Ihre Bestellung.
         track_information: 'Sendungsverfolgung: %{tracking}'
         track_link: 'Sendungsverfolgung: %{url}'
+    shipment_numbers: Sendungsnummern
     shipment_state: Versandstatus
     shipment_states:
       backorder: Nachlieferung
@@ -1536,10 +1582,19 @@ de:
     shipping_method: Versandart
     shipping_methods: Versandarten
     shipping_price_sack: Preis füllen
+    shipping_rate:
+      display_price:
+        display_price_with_explanations: "%{price} (%{explanations})"
+        tax_label_separator: ", "
     shipping_rates:
       display_price:
         excluding_tax: "%{price} (+ %{tax_amount} %{tax_rate_name})"
         including_tax: "%{price} (inkl. %{tax_amount} %{tax_rate_name})"
+    shipping_rate_tax:
+      label:
+        sales_tax: "+ %{amount} %{tax_rate_name}"
+        vat: "inkl. %{amount} %{tax_rate_name}"
+        vat_refund: "exkl. %{amount} %{tax_rate_name}"
     shipping_total: Lieferkosten gesamt
     shop_by_taxonomy: Nach %{taxonomy} filtern
     shopping_cart: Warenkorb
@@ -1549,6 +1604,7 @@ de:
     show_discontinued: Eingestellte Anzeigen
     show_only_complete_orders: Nur abgeschlossene Bestellungen anzeigen
     show_only_considered_risky: Nur riskante Bestellungen anzeigen
+    show_only_open_transfers: nur offene Lagerbewegungen zeigen
     show_rate_in_label: Zeige Steuer im Label
     sku: Artikelnummer
     skus: Artikelnummern
@@ -1613,6 +1669,8 @@ de:
     stock_transfers: Lager Transfers
     stop: Bis
     store: Shop
+    store_credit_category:
+      default: Standard
     street_address: Straße
     street_address_2: Straße (Zusatz)
     subtotal: Zwischensumme
@@ -1662,6 +1720,7 @@ de:
     tiers: Staffelung
     time: Zeit
     to_add_variants_you_must_first_define: Um Varianten hinzuzufügen, müssen Sie sie erst definieren.
+    token_generation_enabled: Token Generierung aktiviert
     total: Gesamt
     total_per_item: Summe pro Artikelposition
     total_pre_tax_refund: Komplett erstattet (Vorsteuer)
@@ -1682,6 +1741,7 @@ de:
     unable_to_connect_to_gateway: Konnte nicht zur Schnitstelle verbinden.
     unable_to_create_reimbursements: Konnte Vergütung nicht erstellen.
     under_price: Unter %{price}
+    unfinalize_all_adjustments: Anpassungen entsperren
     unlock: Entsperren
     unrecognized_card_type: Unbekannter Kartentyp
     unshippable_items: Nicht lieferbare Artikel
@@ -1708,7 +1768,10 @@ de:
       unpaid_amount_not_zero: 'Nicht vollständig bezahlt. Aussenstehend: %{amount}'
     value: Wert
     variant: Variante
-    variant_placeholder: Variante wählen
+    variant_placeholder: Produktvariante wählen
+    variant_properties: Eigenschaften der Produktvariante
+    variant_search_placeholder: Produktvariante auswählen
+    variant_to_add: Produktvariante auswählen
     variants: Varianten
     version: Version
     void: entwerten
