@@ -169,6 +169,8 @@ de:
         type: Typ
         updated: Geändert am
         user: Benutzer
+      spree/stock_transfer:
+        number: Nummer
       spree/store:
         mail_from_address: Versandadresse
         meta_description: Seitenbeschreibung
@@ -422,6 +424,9 @@ de:
       spree/payment_method:
         one: Zahlungsart
         other: Zahlungsarten
+      spree/price:
+        one: Preis
+        other: Preise
       spree/product:
         one: Produkt
         other: Produkte
@@ -645,6 +650,12 @@ de:
     adjustment_total: Anpassungen Gesamt
     adjustments: Anpassungen
     admin:
+      images:
+        index:
+          upload_images: Produktbilder laden
+          choose_files: Datei auswählen
+          drag_and_drop: Datei ziehen und hier loslassen 
+          image_process_failed: Bild konnte nicht geladen werden
       order:
         events:
           admin:
@@ -665,6 +676,10 @@ de:
           new_price: Neuer Preis
         new:
           new_price: Neuer Preis
+      store_credits:
+        add: Neue Gutschrift
+        new: Neue Gutschrift
+        select_reason: Grund der Grundschrift auswählen
       tab:
         areas: Gebiete
         configuration: Konfiguration
@@ -691,6 +706,8 @@ de:
         stock: Lager
         stock_items: Lagerhaltung
         stock_transfers: Lagerbewegungen
+      taxons:
+        display_order: Anzeige-Reihenfolge
       user:
         account: Konto
         addresses: Adressen
@@ -704,6 +721,9 @@ de:
         orders: Bestellungen
         user_information: Benutzerinformationen
         store_credit: Gutschriften
+      users:
+        user_page_actions:
+          create_order: Neue Bestellung
       variants:
         edit:
           edit_variant: Variante bearbeiten
@@ -736,13 +756,12 @@ de:
     analytics_trackers: Zugriffsstatistik Tracker
     and: und
     api:
-      api:
-        access: Zugang
-        clear_key: Schlüssel löschen
-        generate_key: Schlüssel generieren
-        key: Schlüssel
-        no_key: Kein Schlüssel
-        regenerate_key: Schlüssel neu generieren
+      access: Zugang
+      clear_key: Schlüssel löschen
+      generate_key: Schlüssel generieren
+      key: Schlüssel
+      no_key: Kein Schlüssel
+      regenerate_key: Schlüssel neu generieren
       key_cleared: Schlüssel gelöscht
       key_generated: Schlüssel generiert
     approve: Zustimmen
@@ -791,6 +810,7 @@ de:
     cancel: abbrechen
     canceled_at: Abgebrochen am
     canceler: Abgebrochen von
+    cancel_inventory: Lagerbestand
     cancellation: Abbruch
     cannot_create_customer_returns: Kann Rücksendung nicht durchführen.
     cannot_create_payment_without_payment_methods: Sie können keine Zahlung für eine Bestellung anlegen, ohne vorher eine Zahlungsmethode definiert zu haben.
@@ -1189,6 +1209,7 @@ de:
     new_stock_location: Neuer Lagerstandort
     new_stock_movement: Neue Lagerbewegung
     new_stock_transfer: Neuer Lagertransfer
+    new_store_credit: Neue Gutschrift
     new_tax_category: Neue Steuer-Kategorie
     new_tax_rate: Neuer Steuersatz
     new_taxon: Neue Produktklasse
