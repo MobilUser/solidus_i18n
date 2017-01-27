@@ -1810,10 +1810,6 @@ de:
     zones: Gebiete
     canceled: Storniert
     cannot_create_payment_link: Bitte definieren Sie zuerst mindestens eine Zahlungsmethode.
-    inventory_states:
-      canceled: Storniert
-      returned: zurück erstattet
-      shipped: Ausgeliefert
     no_resource_found_link: Hinzufügen
     store_credit:
       display_action:
