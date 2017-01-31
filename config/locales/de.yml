@@ -1456,6 +1456,7 @@ de:
     provider: Anbieter
     provider_settings_warning: Nach einer Änderung des Anbietertyps muss erst gespeichert werden.
     public_key: öffentlicher Schlüssel
+    publishable_key: öffentlicher Schlüssel 
     qty: Anzahl
     quantity: Anzahl
     quantity_returned: Zurückgegebene Menge
@@ -1548,6 +1549,7 @@ de:
     search: Suchen
     search_results: Suchergebnisse für '%{keywords}'
     searching: Suche
+    secret_key: Privater Schlüssel
     secure_connection_type: Sicherer Verbindungstyp
     security_settings: Sicherheitseinstellungen
     select: Auswählen
