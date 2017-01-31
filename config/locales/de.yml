@@ -548,6 +548,9 @@ de:
     oauth_callbacks:
       failure: Sie konnten nich über %{kind} autorisiert werden, weil %{reason}.
       success: Erfolgreich mit %{kind} Konto autorisiert.
+    sessions:
+      spree_user:
+        signed_out: Sie sind nun abgemeldet.
     unlocks:
       send_instructions: Sie erhalten in wenigen Minuten eine E-Mail mit einer Anleitung zum Entsperren Ihres Kontos.
       unlocked: Ihr Konto wurde erfolgreich entsperrt. Sie sind jetzt angemeldet.
