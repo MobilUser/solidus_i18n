@@ -851,11 +851,13 @@ de:
     code: Code
     company: Firma
     complete: komplett
+    complete_order: Auftrag abschliessen
     configuration: Konfiguration
     configurations: Konfigurationen
     confirm: Bestätigen
     confirm_delete: Löschen bestätigen
     confirm_password: Passwort bestätigen
+    confirm_order: Bestellung bestätigen
     continue: fortfahren
     continue_shopping: Weiter Einkaufen
     cost_currency: Kostenwährung
@@ -1035,6 +1037,7 @@ de:
     forgot_password: Passwort vergessen?
     free_shipping: Versandkostenfrei
     free_shipping_amount: Versandkostenfreibetrag
+    from: von
     front_end: Shop-Ansicht
     gateway: Schnittstelle
     gateway_config_unavailable: Schnittstelle für diese Umgebung nicht erhältlich
@@ -1302,6 +1305,8 @@ de:
     order_not_found: Wir konnten Ihre Bestellung nicht finden. Bitte versuchen Sie es später noch einmal.
     order_number: "Bestellnummer: %{number}"
     order_processed_successfully: Ihre Bestellung wurde erfolgreich bearbeitet
+    order_please_refresh: "Achtung: bitte laden Sie die Seite neu"
+    order_refresh_totals: Auftragdaten neu laden
     order_resumed: Bestellung fortgeführt
     order_state:
       address: Adresse
