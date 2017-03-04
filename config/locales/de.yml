@@ -1110,12 +1110,13 @@ de:
       on_hand: lagernd
       returned: retoure
       shipped: versendet
+    invoice: Rechnung
     invoice_font_face: Schriftart der Rechnungen
     invoice_logo_scale: Größe des Shop Logos in %
     invoices_settings: Rechnungseinstellungen
     invoice_print: Rechnung drucken
     is_not_available_to_shipment_address: ist nicht erhältlich für Lieferadresse
-    iso_name: Iso-Name
+    iso_name: ISO-Name
     item: Artikel
     item_description: Artikelbeschreibung
     item_total: Artikel gesamt
