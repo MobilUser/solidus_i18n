@@ -517,8 +517,10 @@ de:
         one: Benutzer
         other: Benutzer
       spree/log_entry:
+        one: Logeintrag
         other: Logeinträge
       spree/product_property:
+        one: Produkt-Eigenschaft
         other: Produkt-Eigenschaften
       spree/refund:
         one: Rückerstattung
