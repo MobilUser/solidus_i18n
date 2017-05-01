@@ -1303,7 +1303,7 @@ de:
         total: Gesamtsumme
       inventory_cancellation:
         dear_customer: 'Sehr geehrte Kundin, geehrter Kunde, '
-        instructions: einige oder alle Positionen Ihrer Bestellung wurden storniert. Bitte nehmen Sie diese Storno-Informationen zu ihren Unterlagen.
+        instructions: einige oder alle Positionen Ihrer Bestellung wurden storniert. Bitte nehmen Sie diese Storno-Informationen zu Ihren Unterlagen.
         order_summary_canceled: Stornierte Positionen
         subject: Stornierung der Bestellung        
     order_not_found: Wir konnten Ihre Bestellung nicht finden. Bitte versuchen Sie es später noch einmal.
