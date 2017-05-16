@@ -278,6 +278,7 @@ de:
         reception_status:
           given_to_customer: dem Kunden ausgehändigt
           lost_in_transit: beim Transport verloren
+          one: Status
           received: empfangen
           shipped_wrong_item: falsche Lieferung
           short_shipped: erst ausgeliefert
@@ -689,6 +690,7 @@ de:
         areas: Gebiete
         configuration: Konfiguration
         display_order: Anzeige-Reihenfolge
+        locales: Sprachen
         option_types: Optionen
         orders: Bestellungen
         overview: Übersicht
@@ -711,6 +713,7 @@ de:
         stock: Lager
         stock_items: Lagerhaltung
         stock_transfers: Lagerbewegungen
+        stores: Shops
       taxons:
         display_order: Anzeige-Reihenfolge
       user:
@@ -1218,6 +1221,7 @@ de:
     new_stock_location: Neuer Lagerstandort
     new_stock_movement: Neue Lagerbewegung
     new_stock_transfer: Neuer Lagertransfer
+    new_store: Neuer Shop
     new_store_credit: Neue Gutschrift
     new_tax_category: Neue Steuer-Kategorie
     new_tax_rate: Neuer Steuersatz
