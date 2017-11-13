@@ -526,9 +526,12 @@ de:
       spree/refund:
         one: Rückerstattung
         other: Rückerstattungen
+      spree/store_credit:
+        one: Guthaben
+        other: Guthaben
       spree/store_credit_category:
-        one: Kategorie
-        other: Kategorien
+        one: Guthabenkategorie
+        other: Guthabenkategorien
   devise:
     confirmations:
       confirmed: Ihr Konto wurde erfolgreich bestätigt. Sie sind jetzt angemeldet.
@@ -561,7 +564,7 @@ de:
       user:
         cannot_be_blank: Ihr Passwort darf nicht leer sein.
         send_instructions: Sie erhalten in wenigen Minuten eine E-Mail mit einer Anleitung zum Zurücksetzen Ihres Passworts.
-        updated: Ihr Password wurde erfolgreich geändert. SIe sind jetzt angemeldet.
+        updated: Ihr Password wurde erfolgreich geändert. Sie sind jetzt angemeldet.
     user_registrations:
       destroyed: Auf Wiedersehen! Ihr Konto wurde erfolgreich gelöscht. Wir hoffen sie bald wieder begrüßen zu dürfen.
       inactive_signed_up: Sie haben sich erfolgreich registriert. Wir konnten sie aber nicht anmelden, denn %{reason}.
@@ -644,7 +647,10 @@ de:
     adjustment: Anpassung
     adjustment_amount: Betrag
     adjustment_labels:
+      order: "%{promotion} %{promotion_name} wurde angewendet"
       tax_rates:
+        sales_tax_with_rate: "%{amount} %{name}"
+        vat_with_rate: "inkl. %{amount} %{name}"
         excluding_tax: "%{name}%{amount}"
         including_tax: "%{name}%{amount} (Im Preis enthalten)"
         vat: '%{name} (im Preis enthalten)'
@@ -772,6 +778,7 @@ de:
       regenerate_key: Schlüssel neu generieren
       key_cleared: Schlüssel gelöscht
       key_generated: Schlüssel generiert
+    apply_code: Gutschein anwenden
     approve: Zustimmen
     approved_at: Zugestimmt am
     approver: Zustimmer
@@ -816,6 +823,7 @@ de:
     calculator: Rechner
     calculator_settings_warning: Wenn Sie den Berechungs-Typ ändern, müssen Sie erst speichern, bevor Sie die Berechnungs-Einstellungen bearbeiten können
     cancel: abbrechen
+    cancel_inventory: Inventar löschen
     canceled_at: Abgebrochen am
     canceler: Abgebrochen von
     cancel_inventory: Lagerbestand
@@ -856,11 +864,12 @@ de:
     code: Code
     company: Firma
     complete: komplett
-    complete_order: Auftrag abschliessen
+    complete_order: Bestellung abschließen
     configuration: Konfiguration
     configurations: Konfigurationen
     confirm: Bestätigen
     confirm_delete: Löschen bestätigen
+    confirm_order: Bestellung bestätigen
     confirm_password: Passwort bestätigen
     confirm_order: Bestellung bestätigen
     continue: fortfahren
@@ -1030,6 +1039,8 @@ de:
     filter: Filter
     filter_results: Ergebnisse filtern
     finalize: abschließen
+    finalize_all_adjustments: Alle Anpassungen finalisieren
+    unfinalize_all_adjustments: Alle Anpassungen definalisieren
     finalized: abgeschlossen
     finalize_all_adjustments: Anpassungen sperren
     find_a_taxon: Klassifizierung suchen
@@ -1109,12 +1120,6 @@ de:
     inventory_adjustment: Lager-Anpassung
     inventory_error_flash_for_insufficient_quantity: Ein Artikel aus Ihrem Warenkorb ist nicht mehr verfügbar.
     inventory_state: Lagerstatus
-    inventory_states:
-      backordered: nachbestellt
-      canceled: storniert
-      on_hand: lagernd
-      returned: retoure
-      shipped: versendet
     invoice: Rechnung
     invoice_font_face: Schriftart der Rechnungen
     invoice_logo_scale: Größe des Shop Logos in %
@@ -1283,7 +1288,7 @@ de:
     order_already_updated: Bestellung bereits geändert
     order_approved: Bestellung freigegeben
     order_canceled: Bestellung storniert
-    order_completed: Bestellung abgeschlossen
+    order_completed: Bestellung erfolgreich abgeschlossen
     order_details: Details der Bestellung
     order_email_resent: Bestellbestätigung erneut versendet
     order_has_no_payments: Bestellung hat keine Bezahlungen
@@ -1291,30 +1296,28 @@ de:
     order_line_items: Bestellposten
     order_mailer:
       cancel_email:
-        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde, '
-        instructions: Ihre Bestellung wurde storniert. Bitte bewahren Sie diese Stornierung für Ihre Unterlagen auf.
+        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde,'
+        instructions: Ihre Bestellung wurde storniert. Bitte bewahren Sie diese Information für Ihre Unterlagen auf.
         order_summary_canceled: Bestellzusammenfassung [STORNO]
         subject: Bestellung storniert
         subtotal: Zwischensumme
         total: Gesamtsumme
       confirm_email:
-        dear_customer: Sehr geehrter Kunde,\n
-        instructions: bitte prüfen Sie noch einmal die folgende Bestellung und bewahren die Bestellbestätigung für Ihre Unterlagen auf.
-        order_summary: Bestellzusammenfassung
+        dear_customer: Sehr geehrte Kundin, geehrter Kunde,
+        order_summary: Folgende Artikel wurden von Ihnen bestellt
         subject: Bestellbestätigung
         subtotal: Zwischensumme
-        thanks: Vielen Dank für Ihre Bestellung.
         total: Gesamtsumme
       inventory_cancellation:
-        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde, '
-        instructions: einige oder alle Positionen Ihrer Bestellung wurden storniert. Bitte nehmen Sie diese Storno-Informationen zu Ihren Unterlagen.
-        order_summary_canceled: Stornierte Positionen
-        subject: Stornierung der Bestellung        
+        dear_customer: 'Sehr geehrte Kundin, geehrter Kunde,'
+        instructions: ein oder mehrere Artikel aus Ihrer Bestellung wurden storniert. Bitte bewahren Sie diese Information für Ihre Unterlagen auf.
+        order_summary_canceled: Stornierte Artikel
+        subject: Stornierung von Artikeln
     order_not_found: Wir konnten Ihre Bestellung nicht finden. Bitte versuchen Sie es später noch einmal.
-    order_number: "Bestellnummer: %{number}"
+    order_number: Bestellnummer %{number}
+    order_please_refresh: Die Bestellung muss aktualisiert werden
     order_processed_successfully: Ihre Bestellung wurde erfolgreich bearbeitet
-    order_please_refresh: "Achtung: bitte laden Sie die Seite neu"
-    order_refresh_totals: Auftragdaten neu laden
+    order_refresh_totals: Preise der Bestellung aktualisieren
     order_resumed: Bestellung fortgeführt
     order_state:
       address: Adresse
@@ -1322,7 +1325,7 @@ de:
       canceled: Storniert
       cart: Warenkorb
       complete: Abgeschlossen
-      confirm: Bestätigt
+      confirm: Überprüfen
       considered_risky: Riskant
       delivery: Versand
       payment: Bezahlung
@@ -1378,7 +1381,7 @@ de:
     percent_per_item: Prozent pro Artikel
     permalink: Permalink
     phone: Telefon
-    place_order: Bestellung ausführen
+    place_order: Zahlungspflichtig bestellen
     please_define_payment_methods: Bitte definieren Sie zuerst mindestens eine Zahlungsmethode.
     please_enter_reasonable_quantity: Bitte geben Sie eine zumutbare Menge ein
     populate_get_error: Da ist etwas schief gelaufen. Bitte versuchen sie den Artikel erneut in den Warenkob zu tun.
@@ -1500,7 +1503,7 @@ de:
     reimbursement_mailer:
       reimbursement_email:
         days_to_send: Tage verbleibend
-        dear_customer: Sehr geehrte/r Kunde/in
+        dear_customer: Sehr geehrte Kundin, geehrter Kunde,
         exchange_summary: Übersicht Umtausch
         for: für
         instructions: Anweisungen
@@ -1587,14 +1590,13 @@ de:
     ship_total: Versand gesamt
     shipment: Sendung
     shipment_adjustments: Sendung anpassen
-    shipment_details: Versendungsdetails
+    shipment_details: "%{shipping_method}"
     shipment_mailer:
       shipped_email:
-        dear_customer: 'Sehr geehrte/r Kunde/in,'
+        dear_customer: Sehr geehrte Kundin, geehrter Kunde,
         instructions: Ihre Bestellung wurde versandt.
         shipment_summary: Versandzusammenfassung
         subject: Versand-Benachrichtigung
-        thanks: Vielen Dank für Ihre Bestellung.
         track_information: 'Sendungsverfolgung: %{tracking}'
         track_link: 'Sendungsverfolgung: %{url}'
     shipment_numbers: Sendungsnummern
@@ -1828,6 +1830,11 @@ de:
     zones: Gebiete
     canceled: Storniert
     cannot_create_payment_link: Bitte definieren Sie zuerst mindestens eine Zahlungsmethode.
+    inventory_states:
+      canceled: Storniert
+      on_hand: auf Lager
+      returned: zurück erstattet
+      shipped: Ausgeliefert
     no_resource_found_link: Hinzufügen
     store_credit:
       display_action:
